@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Asteroides\InstanciaAsteroides.js">
+    <Files>
+      <File FileName="Assets\Scripts\Asteroides\InstanciaAsteroides.js" Line="14" Column="39" />
+      <File FileName="Assets\Scripts\Asteroides\MovimientoAsteroides.js" Line="4" Column="24" />
+      <File FileName="Assets\Scripts\Ship\Movement.js" Line="31" Column="22" />
+      <File FileName="Assets\Scripts\Earth\MovementEarth.js" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\Ship\Shoot.js" Line="7" Column="56" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
