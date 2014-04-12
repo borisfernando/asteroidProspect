@@ -1,49 +1,23 @@
-﻿function Start () {
-}
-
-function movementX(){
-	var speed : float = 7.0;
-	if (Input.GetButton("Fire2")){
-		transform.Translate(Vector3.right * speed);
+﻿/// This script moves the character controller forward 
+	/// and sideways based on the arrow keys.
+	/// It also jumps when pressing space.
+	/// Make sure to attach a character controller to the same game object.
+	/// It is recommended that you make only one call to Move or SimpleMove per frame.	
+	var speed : float = 6.0;
+	var jumpSpeed : float = 8.0;
+	var gravity : float = 20.0;
+	private var moveDirection : Vector3 = Vector3.zero;
+	function Update() {
+		var controller : CharacterController = GetComponent(CharacterController);
+		
+			// We are grounded, so recalculate
+			// move direction directly from axes
+			moveDirection = Vector3(Input.GetAxis("Horizontal"), 0,
+			                        Input.GetAxis("Vertical"));
+			moveDirection = transform.TransformDirection(moveDirection);
+			moveDirection *= speed;
+			
+				
+		// Move the controller
+		controller.Move(moveDirection * Time.deltaTime);
 	}
-	if (Input.GetButton("Fire1")){
-		transform.Translate(Vector3.left * speed);
-	}
-}
-
-function movementY(){
-	// A very simplistic car driving on the x-z plane.
-	var speed : float = 10.0;
-	var rotationSpeed : float = 100.0;
-	// Get the horizontal and vertical axis.
-	// By default they are mapped to the arrow keys.
-	// The value is in the range -1 to 1
-	var rotation : float = Input.GetAxis ("Horizontal") * rotationSpeed;
-	
-	// Make it move 10 meters per second instead of 10 meters per frame...
-	rotation *= Time.deltaTime;
-	// Rotate around our y-axis
-	transform.Rotate (0, 0, rotation);
-}
-
-function movementZ(){
-	// A very simplistic car driving on the x-z plane.
-	var speed : float = 10.0;
-	var rotationSpeed : float = 100.0;
-	// Get the horizontal and vertical axis.
-	// By default they are mapped to the arrow keys.
-	var rotation : float = Input.GetAxis ("Vertical") * rotationSpeed;
-	
-	// Make it move 10 meters per second instead of 10 meters per frame..
-	rotation *= Time.deltaTime;
-	
-	// Rotate around our y-axis
-	transform.Rotate (0, rotation, 0);
-}
-
-function Update () {
-	movementX();
-	movementY();
-	movementZ();
-	
-}
