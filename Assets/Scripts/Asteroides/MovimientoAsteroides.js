@@ -1,6 +1,5 @@
-﻿var i : int = Random.Range(0,1);
-
-function Update () {
+﻿function Update () {
+	var i : int = Random.Range(0,1);
 	var speed : float = 1.5;
 	var rotationSpeed : float = 10.0;
 	var rotation : float;
