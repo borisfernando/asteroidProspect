@@ -1,14 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Ship\Collisions.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Asteroides\EarthboundAsteroids.js">
     <Files>
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="463" Column="13" />
+      <File FileName="Assets\Scripts\Asteroides\EarthboundAsteroids.js" Line="171" Column="2" />
       <File FileName="Assets\Scripts\Asteroides\MovimientoAsteroides.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ship\Movement.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ship\Shoot.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ship\Collisions.js" Line="10" Column="3" />
-      <File FileName="Assets\Scripts\Ship\CollisionBullet.js" Line="6" Column="49" />
-      <File FileName="Assets\Scripts\Asteroides\EarthboundAsteroids.js" Line="22" Column="74" />
+      <File FileName="Assets\Scripts\Asteroides\EarthboundAsteroids.js" Line="178" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
