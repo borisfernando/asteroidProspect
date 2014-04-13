@@ -36,17 +36,18 @@ var asteroid29 : Rigidbody;
 var asteroid30 : Rigidbody;
 var earth : Transform;
 var speed : float;
+var radius : int;
 
 function Start () {
-    InvokeRepeating("CreateAsteroids",0,0.7);
-    
+    InvokeRepeating("CreateAsteroids",0,1);
     
 }
 function CreateAsteroids(){
 	var selection : int = Random.Range(1,30);
-	var posX : int = Random.Range(1000,10000);
-	var posY : int = Random.Range(1000,10000);
-	var posZ : int = Random.Range(1000,10000);
+	var theta : float = Random.value*(2*Mathf.PI);
+	var posX : int = radius * Mathf.Cos(theta);
+	var posY : int = Random.Range(-50,50);
+	var posZ : int = radius * Mathf.Sin(theta);
 	var asteroidInstance : Rigidbody;
 	
 	if (selection == 1){
