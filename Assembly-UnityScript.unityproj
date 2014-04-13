@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Asteroides\EarthboundAsteroids.js" />
+     <Compile Include="Assets\Scripts\Asteroides\InstanciaAsteroides.js" />
      <Compile Include="Assets\Scripts\Asteroides\MovimientoAsteroides.js" />
      <Compile Include="Assets\Scripts\Camera\SmoothFollow.js" />
      <Compile Include="Assets\Scripts\Earth\MovementEarth.js" />
